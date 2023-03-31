@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+.navbar-brand {
+    font-size: 40px;
+    color: #146C94 !important;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+}
+.nav-link {
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.nav-link:hover {
+    color: #19A7CE !important;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-collapse {width: 70%;justify-content: flex-end;}
+}
