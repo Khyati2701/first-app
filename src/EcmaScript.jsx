@@ -5,12 +5,12 @@ const EcmaScript  =() => {
       <>
       <div>
         <h1><b><u><center>React ES6</center></u></b></h1>
-          <h2>What is ES6?</h2>
+          <h2>1. What is ES6?</h2>
             <p>es6 stands for ECMAScript 6.</p>
             <p>ECMAScript is a JavaScript standard intended to ensure a common language scross different browsers.</p>
             <p>ES6 is the 6th version of ECMAScript.</p>
 
-          <h2>Why is ES6?</h2>
+          <h2>2. Why is ES6?</h2>
             <p>React uses ES6 and all of these new features will make your coding experince in react much much better.</p>
             <p>you will be able to do things much more ease and in very less lines!</p>
           
@@ -184,7 +184,7 @@ const EcmaScript  =() => {
           </pre>
         </div>
       
-      <h3><b>4. ternary Operator:</b></h3>
+      <h3><b>4. Ternary Operator:</b></h3>
         <p>With this, you can write if/esle conditions is one line, it's syntax is fairly simple like this:</p>
         <h4>syntax:</h4>
         <div class="code-toolbar">

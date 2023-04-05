@@ -5,10 +5,10 @@ const ReactJSX  =() => {
       <>
       <div>
         <h1><b><u>ReactJSX</u></b></h1>
-            <h2><b>What is JSX?</b></h2>
+            <h2><b>1. What is JSX?</b></h2>
                 <p>JSX stands for JavaScript XML. It is similar in appearance to HTML, hence provides a way to easily write HTML in react. </p>
 
-            <h2><b>Coding in JSX:</b></h2>
+            <h2><b>2. Coding in JSX:</b></h2>
                 <p>Earlier we had to make an HTML element or append it into existing ones with methods like createElement() / appendChild()</p>
                 <div class="code-toolbar">
                     <pre class="language-javascript" tabindex="0">
@@ -58,10 +58,10 @@ const ReactJSX  =() => {
                         </code>
                     </pre>
                 </div>
-            <h2><b>Expressions in JSX:</b></h2>
+            <h2><b>3. Expressions in JSX:</b></h2>
                 <p>You can write the expression in {}</p>
                 <p>You can write simple mathematical operations to variable to states to complicated operations with ternary operators and it will return the result, like:</p>
-                <h3><b>Mathematical Operators:</b></h3>
+                <h3><b>a. Mathematical Operators:</b></h3>
                 <div class="code-toolbar">
                     <pre class="language-javascript" tabindex="0">
                         <code class="language-javascript">
@@ -88,7 +88,7 @@ const ReactJSX  =() => {
                         </code>
                     </pre>
                 </div>
-                <h3><b>Variables/States:</b></h3>
+                <h3><b>b. Variables/States:</b></h3>
                 <div class="code-toolbar">
                     <pre class="language-javascript" tabindex="0">
                         <code class="language-javascript">
@@ -121,7 +121,7 @@ const ReactJSX  =() => {
                         </code>
                     </pre>
                 </div>
-                <h3><b>Variables/States:</b></h3>
+                <h3><b>c. Ternary operator:</b></h3>
                 <div class="code-toolbar">
                     <pre class="language-javascript" tabindex="0">
                         <code class="language-javascript">
