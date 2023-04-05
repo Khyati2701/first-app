@@ -5,6 +5,7 @@ import AboutPage from "./AboutPage.jsx";
 import ContactPage from "./ContactPage.jsx";
 import HeaderComp from "./CommonCompo/Header";
 import ExampleCompo from "./ExampleCompo";
+import EcmaScript from "./EcmaScript.jsx";
 
 const ClassCompoRoute = React.lazy(()=>{ return import('./ClassCompo/ClassCompoRoute.jsx') })
 // const FunctionalCompoRoute = React.lazy(()=>import('./FunctionalCompo/FunctionalCompoRoute'))
@@ -20,6 +21,10 @@ const MainRouter = createBrowserRouter([
     {
         path: "/contact",
         element: <><HeaderComp/><ContactPage/></>,
+    },
+    {
+        path: "/ecmaScript",
+        element: <><HeaderComp/><EcmaScript></EcmaScript></>,
     },
     {
         path: "/examples",

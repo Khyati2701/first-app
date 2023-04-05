@@ -45,6 +45,9 @@ export default function App() {
               <Link className='nav-link' to='/about'>About us</Link>
             </MDBNavbarItem>
             <MDBNavbarItem>
+              <Link className="nav-link" to='/ecmascript'>EcmaScript</Link>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
               <Link className='nav-link' to='/examples'>Examples</Link>
             </MDBNavbarItem>
             <MDBNavbarItem>

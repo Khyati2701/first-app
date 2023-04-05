@@ -1,57 +1,57 @@
 import React, { Component } from 'react';
 
-class ConditionalRender extends Component {
+class ConditionalRendering extends Component {
     constructor(props) {
         super(props);
-        this.state={
-            count:1,
-            status:true
+        this.state = { theme: "dark",enabled:true }
+    }
+
+    changeThemeDark = () => {
+        this.setState({ theme: "dark" })
+    }
+    changeThemeLight = () => {
+        this.setState({ theme: "light" })
+    }
+    toggleTheme = () => {
+        if (this.state.theme == "dark") {
+            
+            this.setState({ theme: "light" })
+        }else{
+            this.setState({ theme: "dark" })
+
         }
     }
-    
     render() {
-        let HTMLData = ""
-        // if (this.state.status) {
-        //     return (
-        //         <>
-        //         { JSON.stringify(this.state.status)}
-        //             <button onClick={()=>{
-        //                 this.setState({ status:!this.state.status })
-        //             }}>Click</button>
-        //         <ul>
-        //             <li>list1</li>
-        //             <li>list2</li>
-        //             <li>list3</li>
-        //         </ul>
-        //         </>
-        //     );  
-        // } else {
-        //     return (
-        //         <>
-        //             <button onClick={()=>{
-        //                 this.setState({ status:!this.state.status })
-        //             }}>Click</button>
-        //         <h2>No Record Found</h2>
-        //         </>
-        //     );
-        // } 
-        if (this.state.status) {
-            HTMLData = <h2>Data</h2>
+        let ThemeDarkData = ""
+        if (this.state.theme == "dark") {
+            ThemeDarkData = <div className="dark">This will display dark theme data</div>
         } else {
-            HTMLData = <h2>No record</h2>
-        } 
+            ThemeDarkData = <div className="light">This will display light theme data</div>
+        }
         return (
             <>
-            { JSON.stringify(this.state.status)}
-                <button onClick={()=>{
-                    this.setState({ status:!this.state.status })
-                }}>Click</button>
-            {HTMLData}
+                <button onClick={this.changeThemeDark}>Change to Dark</button>
+                <button onClick={this.changeThemeLight}>Change to Light</button>
+                <button onClick={this.toggleTheme}>Toggle Theme</button>
+                <button onClick={()=>this.setState({enabled:!this.state.enabled})}>Toggle Theme</button>
+                <h3>
+                {JSON.stringify(this.state.enabled)}
+                </h3>
+                { this.state.enabled ? <div>Enabled data</div>:<div>Disabled data</div> }
+                <div className="conditional">
+                    <h2>inside html render return </h2>
+                    <p>if we want to perform some data according condition that time we need to adopt trnary operator ? :</p>
+                    {(this.state.theme == 'dark') ? "data" : "else"}
+                    {(this.state.theme == 'dark') ? <>my division data</> : <>my section data</>}
+                </div>
 
-            {(this.state.status) ? <h2>Data</h2>:<h2>no data</h2>}
+                <h2>Load data from render before return condition</h2>
+                {ThemeDarkData}
+
+                <div className="dark"  style={ (this.state.theme == 'dark') ?  {backgroundColor:"grey",color:"white"} : {}} >This will change</div>
             </>
         );
     }
 }
 
-export default ConditionalRender;
+export default ConditionalRendering;
