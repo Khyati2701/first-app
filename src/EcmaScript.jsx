@@ -4,7 +4,7 @@ const EcmaScript  =() => {
     return(
       <>
       <div>
-        <h1>React ES6</h1>
+        <h1><b><u><center>React ES6</center></u></b></h1>
           <h2>What is ES6?</h2>
             <p>es6 stands for ECMAScript 6.</p>
             <p>ECMAScript is a JavaScript standard intended to ensure a common language scross different browsers.</p>

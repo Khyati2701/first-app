@@ -22,7 +22,7 @@ export default function App() {
   return (
     <MDBNavbar expand='lg' light bgColor='light'>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='#'>Brand</MDBNavbarBrand>
+        <MDBNavbarBrand href='#'>ReactJS</MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls='navbarSupportedContent'
@@ -46,6 +46,12 @@ export default function App() {
             </MDBNavbarItem>
             <MDBNavbarItem>
               <Link className="nav-link" to='/ecmascript'>EcmaScript</Link>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <Link className="nav-link" to='/reactrender'>ReactRender</Link>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <Link className="nav-link" to='/reactjsx'>ReactJSX</Link>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <Link className='nav-link' to='/examples'>Examples</Link>
