@@ -62,9 +62,9 @@ export default function App() {
                   Dropdown
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem link>Action</MDBDropdownItem>
-                  <MDBDropdownItem link>Another action</MDBDropdownItem>
-                  <MDBDropdownItem link>Something else here</MDBDropdownItem>
+                  <MDBDropdownItem link>EcmaScript</MDBDropdownItem>
+                  <MDBDropdownItem link>ReactRender</MDBDropdownItem>
+                  <MDBDropdownItem link>ReactJSX</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavbarItem>
@@ -77,8 +77,8 @@ export default function App() {
           </MDBNavbarNav>
 
           <form className='d-flex input-group w-auto'>
-            <input type='search' className='form-control' placeholder='Type query' aria-label='Search' />
-            <MDBBtn color='primary'>Search</MDBBtn>
+            {/* <input type='' className='' placeholder='' aria-label='' /> */}
+            <MDBBtn color='primary'>Logout</MDBBtn>
           </form>
         </MDBCollapse>
       </MDBContainer>

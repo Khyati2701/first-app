@@ -4,7 +4,7 @@ const HomePage =() => {
   return(
     <>
     <div>
-      <h1><b><u><center>React ES6</center></u></b></h1>
+      <h1><b><u><center>ReactJS</center></u></b></h1>
       
       <h2>what is ReactJS?</h2>
         <p>ReactJS is JS library for buliding user interfaces.</p>

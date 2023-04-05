@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 class ListKeysArrayMap extends Component {
   render() {
-    let MenuData = { "/": "Home", "/about": "About", "/examples": "Examples", "classcompo": "Class Compo" };
+    let MenuData = { "/": "Home", "/about": "About", "/examples": "Examples", "classcompo": "Class Compo", "/ecmaScript": "EcmaScript", "/reactRender": "ReactRender", "/reactJsx": "ReactJSX" };
 
     let MenuItem = Object.entries(MenuData).map(([key, data], index) => {
       return <li key={index}><Link to={key}>{data}</Link></li>;
